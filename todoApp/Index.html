@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Upload</title>
+  <style>
+   ul#menu {
+    padding: 0;
+   }
+
+   ul#menu li {
+    display: inline;
+   }
+
+   ul#menu li a {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px 4px 0 0;
+   }
+
+   ul#menu li a:hover {
+    background-color: orange;
+   }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+  
+   <div class="nav">
+    <ul id="menu">
+       <li><a href="index.html">ACCUEIL</a></li>
+       <li><a href="afficher.html">AFFICHER</a></li>
+    </ul>  
+    
+   </div>
+   <div class="formulaire">
+    <form action="/upload" method="post" enctype="multipart/form-data">
+     <input type="file" name="fichierCsv">
+     <input type="submit" value="Upload">
+    </form>
+   </div>
+
+  </div>
+
+ </body>
+</html>

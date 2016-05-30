@@ -1,0 +1,91 @@
+<!-- <html ng-app="myApp">
+
+<head>
+	<title>Angular setup<title>
+	<script type="text/javascript" src="/libs/angular.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</head>
+
+<body ng-controller="MainController"> 
+<h3> Hello. </h3>
+
+</body>
+
+</html> -->
+
+
+
+<html ng-app="myApp">
+
+<head>
+	<title>Angular setup<title>
+	<script type="text/javascript" src="/libs/angular.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="controllers/mycontroller.js"></script>
+</head>
+
+<body> 
+	<!-- <div ng-controller="appController">  
+
+		<p> {{firstName}} </P>
+		<p> {{lastName}} </P>
+		
+		<a href="" ng-click="setName('Romarick', 'Doe')">Set Name</a>
+
+	</div> -->
+	
+	<!-- <div ng-controller="DivideCtrl">  
+
+		<div> 
+		Entre Value 1: <input type="text" ng-model="numberData.value1" />
+		</div>
+		
+		<<div> 
+		Entre Value 2: <input type="text" ng-model="numberData.value2" />
+		</div> -->
+		
+		<!-- A l<extérieur de mon ng-controller on ne peut pas avoir ce qui est entré au clavier  -->
+		<!-- <button  href="" ng-click="divide(numberData.value1, numberData.value2)">
+			Press to calculate {{numberData.value1}} / {{numberData.value2}}
+		</button>
+
+	</div> -->
+	<!-- <div ng-controller="ng-controller="AppCtrl">  
+
+		<p> {{model.firstName }} </P>  --> <!-- Affiche Romarick  -->
+		<!--<p> {{testFunction()}} </P>  --> <!-- Affiche le message: Hi from Angular  -->
+		
+		<!-- <input type="text" ng-model="testInput" />
+		{{testInput}}
+
+	</div> -->
+	
+	<!-- <div ng-controller="OuterCtrl"> -->  
+		
+		<!-- {{val1}} -->
+		<!-- {{val1.name}}
+		
+		<input type="text" ng-model='val1' />
+		
+		<div ng-controller="InnerCtrl">  
+
+			{{val1.name}}
+			
+			<input type="text" ng-model='val1.name' />
+		
+		</div>
+
+	</div> -->
+	
+	<div ng-controller="InnerCtrl">  
+
+		<p> {{ description }} </p>
+		<p> {{ cars }} </p>
+		
+	</div>
+
+	<p> Description: {{ description }} </p>
+	
+</body>
+
+</html>
